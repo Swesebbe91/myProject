@@ -1,0 +1,39 @@
+.bg-image {
+  width: 100%;
+  height: 30rem;
+  background-image: url("../pages/Components/Images/Hero-image.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: 0.4 ea;
+  padding: 20px;
+}
+
+.position-relative {
+  position: relative !important;
+}
+.position-absoulute {
+  position: absolute !important;
+}
+
+.font-style {
+  font-family: "Dancing Script", cursive, sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  text-shadow: 2px 2px rgba(241, 237, 14, 0.5);
+}
+
+.ml-sm {
+  margin-left: 20px;
+}
+
+.text-position {
+    bottom: 1.5%;
+    right: 40%;
+    color: white;
+}
+
+.text-style {
+    font-style: italic;
+    
+}
+

@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 import "./Nav.css";
 import logo from "../Images/sunset_run_transparent.png";
 import {BsFacebook, BsInstagram, BsCartPlusFill} from 'react-icons/bs'
-const Nav = () => {
+const Nav = ({value}) => {
+
+      
   return (
     <div className="bg-color px d-flex" >
       <div className="d-flex">
@@ -47,7 +49,8 @@ const Nav = () => {
           <BsCartPlusFill size="2rem"/>
           </Link>
           <div>
-            <span className="position-absoulute bg-sunny circle border-line shadow icon-badge dark">0</span>
+            <span className="position-absoulute bg-sunny circle border-line shadow icon-badge dark">0{value}</span>
+            
           </div>
         </div>
       </div>
