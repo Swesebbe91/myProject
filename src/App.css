@@ -7,3 +7,7 @@
 body {
   background-color: rgb(31, 118, 248);
 }
+
+:root {
+  --color-primary: rgb(31, 118, 248);
+}
