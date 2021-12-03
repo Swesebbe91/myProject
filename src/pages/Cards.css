@@ -11,11 +11,11 @@
 }
 
 .img-size {
-    max-width: 60%;
+    max-width: 50%;
 }
 
-.test-try {
-   word-break: break-all;
+.center-align {
+   text-align: center;
 }
 
 .card-text-container {

@@ -17,9 +17,17 @@ const Home = () => {
       </div>
       <div className="card-container">
         
-        <Cards image={image} header={"Anmälan"} paragraph={"Hej mitt namn är sven, jag är 15 år vad vill du mig?"} />
+        <Cards image={image} header={"Anmälan"} paragraph={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod minima modi dolorem molestias, aliquam excepturi totam. Facere possimus est maxime"} />
        
-        <Cards image={image} header={"heffeef"} paragraph={""} />
+        <Cards image={image} header={"heffeef"} paragraph={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod minima modi dolorem molestias, aliquam excepturi totam. Facere possimus est maxime"} />
+      </div>
+
+      <div className="card-container">
+        
+        <Cards image={image} header={"Anmälan"} paragraph={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod minima modi dolorem molestias, aliquam excepturi totam. Facere possimus est maxime"} />
+       
+        <Cards image={image} header={"heffeef"} paragraph={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod minima modi dolorem molestias, aliquam excepturi totam. Facere possimus est maxime"} />
+      
       </div>
 
       <button onClick={() => setValue((prev) => (prev += 1))}>
