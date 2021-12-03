@@ -38,9 +38,11 @@
 
 .card-container {
   display: flex;
-  justify-content: center;
-  max-width: 192rem;
+  flex-direction: column;
+  align-items: center;
+  
 }
+
 
 
 
