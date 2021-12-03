@@ -7,6 +7,8 @@ import image3 from "../pages/Components/Images/bild3.JPG";
 import image4 from "../pages/Components/Images/bild4.JPG";
 const Home = () => {
   const [test, setTest] = useState([]);
+  
+  
 
   let a
   let b;
