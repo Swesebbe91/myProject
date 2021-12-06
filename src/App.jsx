@@ -7,13 +7,19 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Partners from './pages/Partners';
 import Cart from './pages/Cart';
+import { createContext, useState } from 'react';
 
+export const countContext = createContext()
 function App() {
+  const[count, setCount] = useState(0);
   return (
     <div className="App">
+      <countContext.Provider value={[count, setCount]}>
       <Layout>
        <Routes>
-         <Route path="/" element={<Home/>} />
+         <Route path="/" element={
+         
+         <Home/>} />
          <Route path="/information" element={<Information/>} />
          <Route path="/about" element={<About/>} />
          <Route path="/contact" element={<Contact/>} />
@@ -22,6 +28,7 @@ function App() {
       </Routes>
 
       </Layout>
+      </countContext.Provider>
     </div>
   );
 }

@@ -5,6 +5,7 @@ import Footer from './Footer'
 const Layout = ({children}) => {
     return (
         <div>
+            
            <Header/>
            <main>
                <h2>{children}</h2>

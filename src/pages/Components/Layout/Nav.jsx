@@ -1,17 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import "./Nav.css";
 import logo from "../Images/sunset_run_transparent.png";
 import {BsFacebook, BsInstagram, BsCartPlusFill} from 'react-icons/bs'
-const Nav = ({value}) => {
+import { countContext } from "../../../App";
+const Nav = () => {
 
-      
+  const contextCount = useContext(countContext)
+ 
   return (
     <div className="bg-color px d-flex" >
       <div className="d-flex">
-        <a href="http://localhost:3000/">
+        <Link to="/">
           <img src={logo} alt="Logo of SunsetRun Page" className="logo-size" />
-        </a>
+        </Link>
         <div className="border-line-right ">
           
         <div className="ml-sm mr-sm ">
@@ -49,7 +51,7 @@ const Nav = ({value}) => {
           <BsCartPlusFill size="2rem"/>
           </Link>
           <div>
-            <span className="position-absoulute bg-sunny circle border-line shadow icon-badge dark">0{value}</span>
+            <span className="position-absoulute bg-sunny circle border-line shadow icon-badge dark">{contextCount}</span>
             
           </div>
         </div>

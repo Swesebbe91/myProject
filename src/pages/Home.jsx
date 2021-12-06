@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import Cards from "./Cards";
 import "./Home.css";
 import image1 from "../pages/Components/Images/IMG_8353.JPG";
@@ -6,14 +5,6 @@ import image2 from "../pages/Components/Images/bild2.jpg";
 import image3 from "../pages/Components/Images/bild3.JPG";
 import image4 from "../pages/Components/Images/bild4.JPG";
 const Home = () => {
-  const [test, setTest] = useState([]);
-
-  let a;
-  let b;
-  useEffect(() => {
-    console.log(test.length);
-    a = [...test].map((item) => !item.value);
-  }, [test]);
 
   const data = [
     {
@@ -41,7 +32,9 @@ const Home = () => {
         "Om du vill delta på loppet anmäler du dig på knappen nedan, klicka sedan på varukorgen för att fylla i din information. OBS Anmälan är öppen t.om 16 juli",
       buttonName: "Anmäl dig här!",
       buttonNameBackside: "Vänd tillbaka kortet",
+      secondButton: "Anmäl dig här",
       url: "http://localhost:3000/cart"
+      
     },
     {
       id: 2,
@@ -88,12 +81,14 @@ const Home = () => {
             paragraph={item.paragraph}
             buttonName={item.buttonName}
             buttonBackside={item.buttonNameBackside}
+            secondButton = {item.secondButton}
             headerBackside={item.header}
             paragraphBackside={item.paragraph}
             test={item.url}
           />
         ))}
       </div>
+      
     </div>
   );
 };
