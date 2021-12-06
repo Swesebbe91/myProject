@@ -5,7 +5,6 @@ import image2 from "../pages/Components/Images/bild2.jpg";
 import image3 from "../pages/Components/Images/bild3.JPG";
 import image4 from "../pages/Components/Images/bild4.JPG";
 const Home = () => {
-
   const data = [
     {
       id: 0,
@@ -19,7 +18,6 @@ const Home = () => {
       buttonName: "Läs mer!",
       buttonNameBackside: "Vänd tillbaka kortet",
       info: "Detta är kort 1",
-     
     },
     {
       id: 1,
@@ -33,8 +31,7 @@ const Home = () => {
       buttonName: "Anmäl dig här!",
       buttonNameBackside: "Vänd tillbaka kortet",
       secondButton: "Anmäl dig här",
-      url: "http://localhost:3000/cart"
-      
+      url: "http://localhost:3000/cart",
     },
     {
       id: 2,
@@ -81,14 +78,13 @@ const Home = () => {
             paragraph={item.paragraph}
             buttonName={item.buttonName}
             buttonBackside={item.buttonNameBackside}
-            secondButton = {item.secondButton}
+            secondButton={item.secondButton}
             headerBackside={item.header}
             paragraphBackside={item.paragraph}
             test={item.url}
           />
         ))}
       </div>
-      
     </div>
   );
 };
