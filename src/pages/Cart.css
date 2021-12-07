@@ -1,0 +1,11 @@
+.cart-menu {
+    display: flex;
+    gap: 2rem;
+}
+
+.form-container {
+    display: flex;
+    display: flex;
+    justify-content: center;
+}
+
