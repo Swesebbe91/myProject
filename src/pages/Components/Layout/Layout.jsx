@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
+import Weather from "./Weather";
 
 const Layout = ({ children }) => {
   return (
@@ -9,7 +10,11 @@ const Layout = ({ children }) => {
       <main>
         <h2>{children}</h2>
       </main>
+      <div className=""> {
+        <Weather/> }
+      </div>
       <Footer />
+      
     </div>
   );
 };

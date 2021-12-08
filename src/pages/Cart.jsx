@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import './Cart.css';
 import { useContext, useEffect } from 'react';
 import { countContext } from '../App';

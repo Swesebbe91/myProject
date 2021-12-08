@@ -1,9 +1,7 @@
-import React, { useEffect } from "react";
 import "./Form.css";
 import { useForm } from "react-hook-form";
 
 const Form = () => {
-  let myStorage = window.Storage;
   const stringMessageSmall = "Värdet måste vara längre än 2 tecken";
   const stringMessageLong = "Värdet får inte vara längre än 30 tecken";
   const stringMessageObligatoriskt = "Detta är obligatoriskt att fylla i";
@@ -22,11 +20,6 @@ const Form = () => {
   const onError = (errors, e) => console.log(errors, e);
 
   console.log("errors", errors);
-
-  //useEffect(() => {
-  // storing input name/
-  //localStorage.setItem(, JSON.stringify(register));
-  //}, [register]);
 
   return (
     <div className="form-column ">

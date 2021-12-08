@@ -2,7 +2,7 @@ import React from 'react'
 
 const Information = () => {
     return (
-        <div>
+        <div >
             <h2>Hello from information</h2>
         </div>
     )

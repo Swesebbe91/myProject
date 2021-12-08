@@ -1,0 +1,12 @@
+.weather-section {
+    background-color: red;
+    color: white;
+
+}
+
+.flex-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
