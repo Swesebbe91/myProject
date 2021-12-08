@@ -17,7 +17,6 @@ const Home = () => {
         'Sunset Run Malmö är ett motionslopp som går längs Sveriges vackraste strand "Ribban" 25 juli. Varmt välkommen att delta på festen!',
       buttonName: "Läs mer!",
       buttonNameBackside: "Vänd tillbaka kortet",
-      info: "Detta är kort 1",
     },
     {
       id: 1,
@@ -31,7 +30,6 @@ const Home = () => {
       buttonName: "Anmäl dig här!",
       buttonNameBackside: "Vänd tillbaka kortet",
       secondButton: "Anmäl dig här",
-      url: "http://localhost:3000/cart",
     },
     {
       id: 2,
@@ -43,7 +41,6 @@ const Home = () => {
       paragraph:
         "Alla som deltar i Sunset Run har chansen att vinna fina priser oavsett prestation, i detta lopp är glädjen och gemenskapen viktigare än resultatet" +
         "Förra året kunde man bl.a vinna Summer lodge paket på The lodge resort",
-      info: "Detta är kort 3",
       buttonName: "Läs mer!",
       buttonNameBackside: "Vänd tillbaka kortet",
     },
@@ -81,7 +78,6 @@ const Home = () => {
             secondButton={item.secondButton}
             headerBackside={item.header}
             paragraphBackside={item.paragraph}
-            test={item.url}
           />
         ))}
       </div>

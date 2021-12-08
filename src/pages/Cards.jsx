@@ -12,7 +12,6 @@ const Cards = ({
   buttonBackside,
   headerBackside,
   paragraphBackside,
-  test,
   secondButton,
 }) => {
   const [isFlipped, setIsFlipped] = useState(false);

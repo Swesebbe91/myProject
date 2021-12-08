@@ -1,46 +1,63 @@
 import './Cart.css';
-import { useContext, useEffect } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { countContext } from '../App';
 import Button from './Button';
 import Form from './Components/Form';
 
 const Cart = () => {
     const [count, setCount] = useContext(countContext);
-    
+    const [form, setForm] = useState([])
+
     function handleClickRemoveItem() {
         setCount((prev) => prev -=1)
-       
+        removeForm()
     }
 
     function handleClickAddItem() {
         setCount((prev) => prev +=1)
+        addForm()
     }
+
+    useEffect(() => {
+      for(let i = 0; i < count; i++) {
+          addForm()
+         
+      }
+        
+        }
+    , [])
 
     useEffect(() => {
         if (count < 1) {
             setCount(0);
         }
-        
+
         }
     , [count])
 
     function addForm() {
-         for(let i = 0; i < count; i++) {
-            return <Form/>
-             
-         }
+            const finalArray = [...form, <Form/>]
+            setForm(finalArray)
     }
+
+    function removeForm() {
+        const finalArray = form
+        finalArray.pop()
+        setForm(finalArray)
+}
 
     return (
         <div>
         <div className="cart-menu">
             <Button name = "Ta bort" onClicked = {handleClickRemoveItem} />
-            <h2>HEllo from Cart + {count} </h2>
+        
             <Button name = "Adda deltagare" onClicked = {handleClickAddItem} />
             </div>
             <div className="form-container">
-             {addForm()}
-        
+            {form.map((item) => (
+                item
+            ))}
+          
             </div>
             
 
