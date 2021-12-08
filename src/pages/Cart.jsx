@@ -39,7 +39,7 @@ const Cart = () => {
             <Button name = "Adda deltagare" onClicked = {handleClickAddItem} />
             </div>
             <div className="form-container">
-             {addForm}
+             {addForm()}
         
             </div>
             

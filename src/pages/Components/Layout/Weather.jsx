@@ -8,46 +8,45 @@ const baseUrl =
 
 const Weather = () => {
   const [data, setData] = useState([]);
-  const [location, setLocation] = useState([])
-  const [together, setTogether] = useState([])
-  //console.log(location.name)
+  console.log(data)
  
 
   useEffect(() => {
     axios.get(baseUrl).then((response) => {
       console.log(response.data) //All data
       const getData = response.data //Skriver över till "get Data"
-      const locations = getData.location //Hämtar ut objetet location
-      setLocation(locations) //Sätter location
-      
       const forecast = getData.forecast //hämtar ut objektet forecast 
       const myObj = forecast.forecastday //En array som innehåller 3 objekt
-      setData(myObj) 
+      
+      setData(myObj)
     });
   }, []);
 
-
-
-  
-  
-  //setData(forecast)
-
-
   return (
-    <div className="">
-      <p>Wheater card</p>
+<div className="">
+      <h2 className="header-section">Väderprognos för kommande tre dagar</h2>
+    <div className="weather-section">
+        
       {data.map((item, i) => (
         <WeatherHolder
         key = {i}
         datum = {item.date}
-        city = {location.name}
-        temperatur = {item.day.maxtemp_c}
-        test = {item.astro.sunrise}
-        temp = {item.hour.temp_c}
-      vind = {item.day.maxwind_kph}
+        temperatur = {item.day.avgtemp_c}
+        sunUp = {item.astro.sunrise}
+        sunDown = {item.astro.sunset}
+        temp = {item.hour[12].temp_c}
+        vind = {item.day.maxwind_kph}
+        feelsLike = {item.hour[12].feelslike_c}
+        clock = {item.hour[12].time}
+        rain = {item.hour[12].will_it_rain}
+        riskForRain = {item.hour[12].chance_of_rain}
+        cloud = {item.hour[12].cloud}
+        
          />
       ))}
     </div>
+    </div>
+    
   );
 };
 
