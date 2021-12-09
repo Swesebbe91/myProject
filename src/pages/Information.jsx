@@ -2,6 +2,7 @@ import React from 'react'
 import Cards from './Cards'
 import './Information.css'
 import BgText from '../pages/Components/BgText'
+import Test from './Components/Layout/Test'
 
 const information = [{
     header: "Startider",
@@ -33,6 +34,9 @@ const Information = () => {
                         link={item.url}
                         aTag={item.tag} />
                 ))}
+                <div className="video">
+                <Test/>
+                </div>
 
             </div></>
     )

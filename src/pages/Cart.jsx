@@ -1,12 +1,13 @@
 import './Cart.css';
 import { useContext, useEffect, useState } from 'react';
-import { countContext } from '../App';
+import { countContext, formContext } from '../App';
 import Button from './Button';
 import Form from './Components/Form';
 
 const Cart = () => {
     const [count, setCount] = useContext(countContext);
-    const [form, setForm] = useState([])
+    const [form, setForm] = useContext(formContext);
+    
 
     function handleClickRemoveItem() {
         setCount((prev) => prev -=1)
@@ -17,15 +18,6 @@ const Cart = () => {
         setCount((prev) => prev +=1)
         addForm()
     }
-
-    useEffect(() => {
-      for(let i = 0; i < count; i++) {
-          addForm()
-         
-      }
-        
-        }
-    , [])
 
     useEffect(() => {
         if (count < 1) {

@@ -1,0 +1,61 @@
+.bg-layout {
+    background-color: white;
+    width: 100%;
+    
+}
+
+
+.flex-contact {
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.flex-contact-row {
+    display: flex;
+}
+
+.flex-contact-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-size-contact {
+    width: 25rem;
+    height: 20rem;
+   
+   
+}
+
+.font-style-contact {
+    font-size: 3rem;
+    color: orangered;
+}
+
+.flex-contact-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row-contact {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.margin-left-contact{
+    margin-left: 1rem;
+    text-decoration: none;
+    color:black;
+    
+}
+
+.margin-left-contact1 {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    color:black;
+  
+}
+
+.margin-bottom {
+    margin-bottom: 1rem;
+}

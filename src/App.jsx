@@ -10,11 +10,15 @@ import Cart from "./pages/Cart";
 import { createContext, useState } from "react";
 
 export const countContext = createContext();
+export const formContext = createContext();
 function App() {
   const [count, setCount] = useState(0);
+  const[form, setForm] = useState([]);
   return (
     <div className="App">
+      <formContext.Provider value={[form, setForm]}>
       <countContext.Provider value={[count, setCount]}>
+      
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -26,6 +30,7 @@ function App() {
           </Routes>
         </Layout>
       </countContext.Provider>
+      </formContext.Provider>
     </div>
   );
 }

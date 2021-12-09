@@ -26,7 +26,7 @@ const WeatherHolder = ({
       <p> Känns som... {feelsLike}°C </p>
       <p> Molnigheten blir: {cloud}% </p>
 
-      {rain ? (
+      {rain? (
         <div className="flex-weather-condition-column">
         <div className="flex-weather-condition">
           <img src={rainPic} /> <p>Det kommer regna...<br></br>Chansen till regn är: {riskForRain}%</p>

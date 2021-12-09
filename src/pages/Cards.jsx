@@ -1,7 +1,8 @@
 import React, { useContext, useState } from "react";
 import "./Cards.css";
 import Button from "./Button";
-import { countContext } from "../App";
+import { countContext, formContext } from "../App";
+import Form from "./Components/Form";
 
 const Cards = ({
   image,
@@ -20,8 +21,9 @@ const Cards = ({
   link
 }) => {
   const [isFlipped, setIsFlipped] = useState(false);
-
+  const [form, setForm] = useContext(formContext)
   const [count, setCount] = useContext(countContext);
+  
 
   function handleClick() {
     setIsFlipped((isFlipped) => !isFlipped);
@@ -29,7 +31,13 @@ const Cards = ({
 
   function addCount() {
     setCount((prev) => (prev += 1));
+    addForm()
   }
+
+  function addForm() {
+    const finalArray = [...form, <Form/>]
+    setForm(finalArray)
+}
 
   return (
     <div className="">
