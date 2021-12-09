@@ -1,4 +1,4 @@
-import Cards from "./Cards";
+import Cards from "./Components/Cards";
 import "./Home.css";
 import image1 from "../pages/Components/Images/IMG_8353.JPG";
 import image2 from "../pages/Components/Images/bild2.jpg";

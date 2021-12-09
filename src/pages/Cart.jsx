@@ -1,7 +1,7 @@
 import './Cart.css';
 import { useContext, useEffect, useState } from 'react';
 import { countContext, formContext } from '../App';
-import Button from './Button';
+import Button from './Components/Button';
 import Form from './Components/Form';
 
 const Cart = () => {

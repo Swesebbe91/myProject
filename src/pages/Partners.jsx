@@ -1,9 +1,9 @@
 import React from 'react'
-
+import picture from './Components/Images/under-construction.png' 
 const Partners = () => {
     return (
         <div>
-            <h2>Hello from partners</h2>
+            <img src={picture} style={{margin: 20}} />
         </div>
     )
 }

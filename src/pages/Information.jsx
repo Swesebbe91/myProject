@@ -1,5 +1,5 @@
 import React from 'react'
-import Cards from './Cards'
+import Cards from './Components/Cards'
 import './Information.css'
 import BgText from '../pages/Components/BgText'
 import Test from './Components/Layout/Test'

@@ -1,7 +1,7 @@
 import React from "react";
 import "./WeatherHolder.css";
-import sunPic from "../Images/113.png";
-import rainPic from "../Images/296.png";
+import sunPic from "./Images/113.png";
+import rainPic from "./Images/296.png";
 
 const WeatherHolder = ({
   datum,

@@ -1,9 +1,9 @@
 import React from "react";
 import "./About.css";
-import BgText from "./pages/Components/BgText";
+import BgText from "./Components/BgText";
 import { GrMail } from "react-icons/gr";
 import { BsFillTelephoneFill } from "react-icons/bs";
-import imageLogo from "./pages/Components/Images/sunset_run_transparent.png";
+import imageLogo from "./Components/Images/sunset_run_transparent.png";
 const About = () => {
   return (
     <div>

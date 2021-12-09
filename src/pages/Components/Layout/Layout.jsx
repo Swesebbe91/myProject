@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
-import Weather from "./Weather";
+import Weather from "../Weather";
 
 const Layout = ({ children }) => {
   return (

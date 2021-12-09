@@ -1,8 +1,8 @@
 import React, { useContext, useState } from "react";
 import "./Cards.css";
 import Button from "./Button";
-import { countContext, formContext } from "../App";
-import Form from "./Components/Form";
+import { countContext, formContext } from "../../App";
+import Form from "./Form";
 
 const Cards = ({
   image,
