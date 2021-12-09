@@ -1,5 +1,6 @@
 import React from 'react'
 import Cards from './Cards'
+import './Information.css'
 
 const information = [{
     header: "Startider",
@@ -21,19 +22,18 @@ const information = [{
 
 const Information = () => {
     return (
-        
-        <div >
-           {information.map((item) => (
-          <Cards
-            header = {item.header}
-            paragraph = {item.paragraph}
-            link = {item.url}
-            aTag = {item.tag}
-          
-          />
-        ))}
-            
-        </div>
+        <><div className="bg-img-header">
+                
+        </div><div>
+                {information.map((item) => (
+                    <Cards
+                        header={item.header}
+                        paragraph={item.paragraph}
+                        link={item.url}
+                        aTag={item.tag} />
+                ))}
+
+            </div></>
     )
 }
 
