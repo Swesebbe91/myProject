@@ -1,6 +1,7 @@
 import React from 'react'
 import Cards from './Cards'
 import './Information.css'
+import BgText from '../pages/Components/BgText'
 
 const information = [{
     header: "Startider",
@@ -22,8 +23,8 @@ const information = [{
 
 const Information = () => {
     return (
-        <><div className="bg-img-header">
-                
+        <><div className="bg-img-headerInfo position-relative">
+                <BgText/> 
         </div><div>
                 {information.map((item) => (
                     <Cards

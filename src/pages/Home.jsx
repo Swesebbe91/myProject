@@ -4,6 +4,8 @@ import image1 from "../pages/Components/Images/IMG_8353.JPG";
 import image2 from "../pages/Components/Images/bild2.jpg";
 import image3 from "../pages/Components/Images/bild3.JPG";
 import image4 from "../pages/Components/Images/bild4.JPG";
+import BgText from "./Components/BgText";
+
 const Home = () => {
   const data = [
     {
@@ -67,14 +69,10 @@ const Home = () => {
 
   return (
     <div>
-      <div className="bg-image test position-relative">
+      <div className="bg-image position-relative">
+        <BgText
+         />
         
-        
-        <h2 className="font-style ml-sm  ">Sunset Run Malmö</h2>
-        <p className="text-position position-absoulute text-style">
-          Malmös <span style={{ textDecoration: "Underline" }}>vackraste</span>{" "}
-          motionslopp!
-        </p>
       </div>
       <div className="card-container">
         {data.map((item) => (

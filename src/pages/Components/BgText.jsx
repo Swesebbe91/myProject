@@ -1,6 +1,6 @@
 import React from 'react'
-import './Test.css'
-const Test = () => {
+import './BgText.css'
+const BgText = () => {
     return (
         <div>
             <h2 className="font-style ml-sm  ">Sunset Run Malmö</h2>
@@ -12,4 +12,4 @@ const Test = () => {
     )
 }
 
-export default Test
+export default BgText
