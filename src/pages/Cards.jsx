@@ -13,6 +13,11 @@ const Cards = ({
   headerBackside,
   paragraphBackside,
   secondButton,
+  secondParagraphBack,
+  thirdParagraphBack,
+  fourthParagraphBack,
+  aTag,
+  link
 }) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
@@ -30,9 +35,11 @@ const Cards = ({
     <div className="">
       {isFlipped ? (
         <div className="Card-class">
-          <div class="card-text-container center-align ">
-            <h2 class="head-size"> {headerBackside} </h2>
-            <p class="text-size">{paragraphBackside}</p>
+          <div className="card-text-container center-align ">
+            <h2 className="head-size"> {headerBackside} </h2>
+            <p className="text-size">{paragraphBackside} <br></br>  {secondParagraphBack} <br></br>
+             {thirdParagraphBack} <br></br> {fourthParagraphBack} </p>
+            
             {/* SKAPA En knapp för att lägga till deltagare på kort2*/}
 
             {buttonName && (
@@ -48,10 +55,11 @@ const Cards = ({
       ) : (
         <div className="Card-class">
           <img src={image} alt={alt} className="img-size" />
-          <div class="card-text-container center-align ">
-            <h2 class="head-size"> {header} </h2>
-            <p class="text-size">{paragraph}</p>
+          <div className="card-text-container center-align ">
+            <h2 className="head-size"> {header} </h2>
+            <p className="text-size">{paragraph}</p>
             {buttonName && <Button name={buttonName} onClicked={handleClick} />}
+            <a href={link}>{aTag}</a>
           </div>
         </div>
       )}
