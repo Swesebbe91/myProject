@@ -13,23 +13,22 @@ export const countContext = createContext();
 export const formContext = createContext();
 function App() {
   const [count, setCount] = useState(0);
-  const[form, setForm] = useState([]);
+  const [form, setForm] = useState([]);
   return (
     <div className="App">
       <formContext.Provider value={[form, setForm]}>
-      <countContext.Provider value={[count, setCount]}>
-      
-        <Layout>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/information" element={<Information />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/partners" element={<Partners />} />
-            <Route path="/cart" element={<Cart />} />
-          </Routes>
-        </Layout>
-      </countContext.Provider>
+        <countContext.Provider value={[count, setCount]}>
+          <Layout>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/information" element={<Information />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/partners" element={<Partners />} />
+              <Route path="/cart" element={<Cart />} />
+            </Routes>
+          </Layout>
+        </countContext.Provider>
       </formContext.Provider>
     </div>
   );

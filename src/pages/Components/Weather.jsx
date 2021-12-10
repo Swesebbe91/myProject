@@ -37,6 +37,7 @@ const Weather = () => {
             rain={item.hour[12].will_it_rain}
             riskForRain={item.hour[12].chance_of_rain}
             cloud={item.hour[12].cloud}
+           
           />
         ))}
       </div>

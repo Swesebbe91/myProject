@@ -39,10 +39,9 @@ const About = () => {
               </div>
             </div>
           </div>
-          
+
           <img className="img-logo-size margin-right-img" src={imageLogo} />
         </div>
-     
       </div>
     </div>
   );

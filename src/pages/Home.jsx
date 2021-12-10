@@ -19,11 +19,13 @@ const Home = () => {
         'Sunset Run Malmö är ett motionslopp som går längs Sveriges vackraste strand "Ribban" 25 juli. Varmt välkommen att delta på festen!',
       buttonName: "Läs mer!",
       buttonNameBackside: "Vänd tillbaka kortet",
-      paragraphBackside: "Sunset Run Malmö är ett motionslopp som går längs \"Ribban\" i Malmö varje sommar i slutet av juni. I loppet kan alla delta oavsett kön, ålder och nivå. Välj mellan distanserna 10 km, 5 km löpning alternativt 5 km promenad.",
+      paragraphBackside:
+        'Sunset Run Malmö är ett motionslopp som går längs "Ribban" i Malmö varje sommar i slutet av juni. I loppet kan alla delta oavsett kön, ålder och nivå. Välj mellan distanserna 10 km, 5 km löpning alternativt 5 km promenad.',
       secondParagraphBack: "Inbjudan (Uppdateras om loppet kan arrangeras)",
-      thirdParagraphBack: "Plats Ribersborgsstranden, Malmö (Start och mål mellan T-bryggan och Limhamnsfältet).",
-      fourthParagrahBack: "Löpning: 250 kr (Tidtagning) Promenad: 150 kr (Ej tidtagning) Efteranmälan löpning: 350 kr Efteranmälan promenad: 250 kr",
-    
+      thirdParagraphBack:
+        "Plats Ribersborgsstranden, Malmö (Start och mål mellan T-bryggan och Limhamnsfältet).",
+      fourthParagrahBack:
+        "Löpning: 250 kr (Tidtagning) Promenad: 150 kr (Ej tidtagning) Efteranmälan löpning: 350 kr Efteranmälan promenad: 250 kr",
     },
     {
       id: 1,
@@ -37,7 +39,8 @@ const Home = () => {
       buttonName: "Anmäl dig här!",
       buttonNameBackside: "Vänd tillbaka kortet",
       secondButton: "Anmäl dig här",
-      paragraphBackside: "Om du vill delta på loppet anmäler du dig på knappen nedan, klicka sedan på varukorgen för att fylla i din information. OBS Anmälan är öppen t.om 16 juli!",
+      paragraphBackside:
+        "Om du vill delta på loppet anmäler du dig på knappen nedan, klicka sedan på varukorgen för att fylla i din information. OBS Anmälan är öppen t.om 16 juli!",
     },
     {
       id: 2,
@@ -51,8 +54,9 @@ const Home = () => {
         "Förra året kunde man bl.a vinna Summer lodge paket på The lodge resort",
       buttonName: "Läs mer!",
       buttonNameBackside: "Vänd tillbaka kortet",
-      paragraphBackside: "Alla som deltar i Sunset Run har chansen att vinna fina priser oavsett prestation, i detta lopp är glädjen och gemenskapen viktigare än resultatet." +
-      " Vi kommer efterhand att släppa fina priser här nedan som du har chans att vinna. Förra året kunde man bl.a vinna övernattning på Örenäs slott, Summer lodge paket på The lodge resort samt flera presentkort till deras spa m.m. ",
+      paragraphBackside:
+        "Alla som deltar i Sunset Run har chansen att vinna fina priser oavsett prestation, i detta lopp är glädjen och gemenskapen viktigare än resultatet." +
+        " Vi kommer efterhand att släppa fina priser här nedan som du har chans att vinna. Förra året kunde man bl.a vinna övernattning på Örenäs slott, Summer lodge paket på The lodge resort samt flera presentkort till deras spa m.m. ",
     },
     {
       id: 3,
@@ -63,16 +67,14 @@ const Home = () => {
       header: "Glädje, Gemenskap & underhållning",
       paragraph:
         "I Sunset Run är alla en vinnare! Här är glädjen och festen viktigare än själva resultatet. Familjer, vänner och kolleger kan delta tillsammans mot ett gemensamt mål.",
-      paragraphBackside: "test"
+      paragraphBackside: "test",
     },
   ];
 
   return (
     <div>
       <div className="bg-image position-relative">
-        <BgText
-         />
-        
+        <BgText />
       </div>
       <div className="card-container">
         {data.map((item) => (
@@ -87,9 +89,9 @@ const Home = () => {
             secondButton={item.secondButton}
             headerBackside={item.header}
             paragraphBackside={item.paragraphBackside}
-            secondParagraphBack= {item.secondParagraphBack}
-            thirdParagraphBack= {item.thirdParagraphBack}
-            fourthParagraphBack= {item.fourthParagrahBack}
+            secondParagraphBack={item.secondParagraphBack}
+            thirdParagraphBack={item.thirdParagraphBack}
+            fourthParagraphBack={item.fourthParagrahBack}
           />
         ))}
       </div>

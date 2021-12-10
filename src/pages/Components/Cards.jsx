@@ -18,12 +18,11 @@ const Cards = ({
   thirdParagraphBack,
   fourthParagraphBack,
   aTag,
-  link
+  link,
 }) => {
   const [isFlipped, setIsFlipped] = useState(false);
-  const [form, setForm] = useContext(formContext)
+  const [form, setForm] = useContext(formContext);
   const [count, setCount] = useContext(countContext);
-  
 
   function handleClick() {
     setIsFlipped((isFlipped) => !isFlipped);
@@ -31,13 +30,13 @@ const Cards = ({
 
   function addCount() {
     setCount((prev) => (prev += 1));
-    addForm()
+    addForm();
   }
 
   function addForm() {
-    const finalArray = [...form, <Form/>]
-    setForm(finalArray)
-}
+    const finalArray = [...form, <Form />];
+    setForm(finalArray);
+  }
 
   return (
     <div className="">
@@ -45,9 +44,11 @@ const Cards = ({
         <div className="Card-class">
           <div className="card-text-container center-align ">
             <h2 className="head-size"> {headerBackside} </h2>
-            <p className="text-size">{paragraphBackside} <br></br>  {secondParagraphBack} <br></br>
-             {thirdParagraphBack} <br></br> {fourthParagraphBack} </p>
-            
+            <p className="text-size">
+              {paragraphBackside} <br></br> {secondParagraphBack} <br></br>
+              {thirdParagraphBack} <br></br> {fourthParagraphBack}{" "}
+            </p>
+
             {/* SKAPA En knapp för att lägga till deltagare på kort2*/}
 
             {buttonName && (

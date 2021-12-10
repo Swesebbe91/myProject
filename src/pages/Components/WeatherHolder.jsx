@@ -13,7 +13,8 @@ const WeatherHolder = ({
   vind,
   rain,
   cloud,
-  riskForRain
+  riskForRain,
+ 
 }) => {
   return (
     <div className="flex-section">
@@ -22,23 +23,28 @@ const WeatherHolder = ({
       <p>Medeltemperaturen ser ut att bli: {temperatur}°C</p>
       <p>Solen går upp: {sunUp}</p>
       <p>Solen går ner: {sunDown}</p>
-      <p> Temperaturen ser ut att bli: {temp}°C kl 12  </p>
+      <p> Temperaturen ser ut att bli: {temp}°C kl 12 </p>
       <p> Känns som... {feelsLike}°C </p>
       <p> Molnigheten blir: {cloud}% </p>
 
-      {rain? (
+      {rain ? (
         <div className="flex-weather-condition-column">
-        <div className="flex-weather-condition">
-          <img src={rainPic} /> <p>Det kommer regna...<br></br>Chansen till regn är: {riskForRain}%</p>
+          <div className="flex-weather-condition">
+            <img src={rainPic} />{" "}
+            <p>
+              Det kommer regna...<br></br>Chansen till regn är: {riskForRain}%
+            </p>
           </div>
         </div>
       ) : (
         <div className="flex-weather-condition-column">
-        <div className="flex-weather-condition">
-          <img src={sunPic} /> <p>Det kommer nog inte regna...<br></br>Chansen till regn är: {riskForRain}%</p>
+          <div className="flex-weather-condition">
+            <img src={sunPic} />{" "}
+            <p>
+              Det kommer nog inte regna...<br></br>Chansen till regn är:{" "}
+              {riskForRain}%
+            </p>
           </div>
-            
-            
         </div>
       )}
       <p>Förväntad maxvind under dagen {vind} km/h</p>
