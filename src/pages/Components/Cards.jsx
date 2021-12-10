@@ -19,6 +19,7 @@ const Cards = ({
   fourthParagraphBack,
   aTag,
   link,
+  test,
 }) => {
   const [isFlipped, setIsFlipped] = useState(false);
   const [form, setForm] = useContext(formContext);
@@ -44,10 +45,7 @@ const Cards = ({
         <div className="Card-class">
           <div className="card-text-container center-align ">
             <h2 className="head-size"> {headerBackside} </h2>
-            <p className="text-size">
-              {paragraphBackside} <br></br> {secondParagraphBack} <br></br>
-              {thirdParagraphBack} <br></br> {fourthParagraphBack}{" "}
-            </p>
+            <p className="text-size">{paragraphBackside}</p>
 
             {/* SKAPA En knapp för att lägga till deltagare på kort2*/}
 
@@ -58,7 +56,6 @@ const Cards = ({
             {secondButton && (
               <Button name={secondButton} onClicked={addCount} />
             )}
-            {console.log(count)}
           </div>
         </div>
       ) : (

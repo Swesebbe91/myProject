@@ -33,7 +33,7 @@ const Weather = () => {
             temp={item.hour[12].temp_c}
             vind={item.day.maxwind_kph}
             feelsLike={item.hour[12].feelslike_c}
-            clock={item.hour[12].time}
+            clock={item.hour[12].time.substring(10,16)}
             rain={item.hour[12].will_it_rain}
             riskForRain={item.hour[12].chance_of_rain}
             cloud={item.hour[12].cloud}

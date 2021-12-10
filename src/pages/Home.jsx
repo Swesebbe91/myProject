@@ -5,6 +5,7 @@ import image2 from "../pages/Components/Images/bild2.jpg";
 import image3 from "../pages/Components/Images/bild3.JPG";
 import image4 from "../pages/Components/Images/bild4.JPG";
 import BgText from "./Components/BgText";
+import TextInfo from "./Components/TextInfo";
 
 const Home = () => {
   const data = [
@@ -19,13 +20,7 @@ const Home = () => {
         'Sunset Run Malmö är ett motionslopp som går längs Sveriges vackraste strand "Ribban" 25 juli. Varmt välkommen att delta på festen!',
       buttonName: "Läs mer!",
       buttonNameBackside: "Vänd tillbaka kortet",
-      paragraphBackside:
-        'Sunset Run Malmö är ett motionslopp som går längs "Ribban" i Malmö varje sommar i slutet av juni. I loppet kan alla delta oavsett kön, ålder och nivå. Välj mellan distanserna 10 km, 5 km löpning alternativt 5 km promenad.',
-      secondParagraphBack: "Inbjudan (Uppdateras om loppet kan arrangeras)",
-      thirdParagraphBack:
-        "Plats Ribersborgsstranden, Malmö (Start och mål mellan T-bryggan och Limhamnsfältet).",
-      fourthParagrahBack:
-        "Löpning: 250 kr (Tidtagning) Promenad: 150 kr (Ej tidtagning) Efteranmälan löpning: 350 kr Efteranmälan promenad: 250 kr",
+      paragraphBackside: <TextInfo/>
     },
     {
       id: 1,
@@ -89,9 +84,7 @@ const Home = () => {
             secondButton={item.secondButton}
             headerBackside={item.header}
             paragraphBackside={item.paragraphBackside}
-            secondParagraphBack={item.secondParagraphBack}
-            thirdParagraphBack={item.thirdParagraphBack}
-            fourthParagraphBack={item.fourthParagrahBack}
+            
           />
         ))}
       </div>

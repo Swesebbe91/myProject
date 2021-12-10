@@ -14,6 +14,7 @@ const WeatherHolder = ({
   rain,
   cloud,
   riskForRain,
+  clock,
  
 }) => {
   return (
@@ -23,7 +24,7 @@ const WeatherHolder = ({
       <p>Medeltemperaturen ser ut att bli: {temperatur}°C</p>
       <p>Solen går upp: {sunUp}</p>
       <p>Solen går ner: {sunDown}</p>
-      <p> Temperaturen ser ut att bli: {temp}°C kl 12 </p>
+      <p> Temperaturen ser ut att bli: {temp}°C, Kl {clock} </p>
       <p> Känns som... {feelsLike}°C </p>
       <p> Molnigheten blir: {cloud}% </p>
 
