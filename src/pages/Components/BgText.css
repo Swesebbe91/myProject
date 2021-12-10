@@ -1,28 +1,27 @@
 .position-relative {
-    position: relative !important;
-  }
-  .position-absoulute {
-    position: absolute !important;
-  }
-  
-  .font-style {
-    font-family: "Dancing Script", cursive, sans-serif;
-    font-size: 50px;
-    font-weight: 300;
-    text-shadow: 2px 2px rgba(241, 237, 14, 0.5);
-  }
-  
-  .ml-sm {
-    margin-left: 20px;
-  }
-  
-  .text-position {
-      bottom: 1.5%;
-      right: 40%;
-      color: white;
-  }
-  
-  .text-style {
-      font-style: italic;
-  }
-  
+  position: relative !important;
+}
+.position-absoulute {
+  position: absolute !important;
+}
+
+.font-style {
+  font-family: "Dancing Script", cursive, sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  text-shadow: 2px 2px rgba(241, 237, 14, 0.5);
+}
+
+.ml-sm {
+  margin-left: 20px;
+}
+
+.text-position {
+  bottom: 1.5%;
+  right: 40%;
+  color: white;
+}
+
+.text-style {
+  font-style: italic;
+}

@@ -1,104 +1,99 @@
 /***** Background-colors *****
 ******************************/
 .bg-color {
-    background-color: white;
+  background-color: white;
 }
 
 .fb-color {
-    background-color: #4267B2 ;
+  background-color: #4267b2;
 }
 
 .bg-sunny {
-    background-color: rgb(255, 217, 5);
+  background-color: rgb(255, 217, 5);
 }
 
 .dark {
-    color: black;
+  color: black;
 }
 
 /****Typography ***
 ********************/
 .text-decoration-none {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .font-size {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 /****Padding *****
 ******************/
 .px {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 /***** Margins ******mr-s
 *********************/
 .ml-sm {
-    margin-left: 1rem;
+  margin-left: 1rem;
 }
 
 .mr-sm {
-    margin-right: 1rem;
+  margin-right: 1rem;
 }
 
 .mr-s {
-    margin-right: 2rem;
+  margin-right: 2rem;
 }
 
 .position-relative {
-    position: relative !important;
+  position: relative !important;
 }
 .position-absoulute {
-    position: absolute !important;
+  position: absolute !important;
 }
 
 /***** FLEX *****
 ******************/
-.d-flex{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /**********************
 *** Images & Logos ***/
 .logo-size {
-    width: 4rem;
-    height: 4rem;
+  width: 4rem;
+  height: 4rem;
 }
 
 .icon-badge {
-    top: -15px;
-    left: 15px;
-    padding: 0.1rem 0.5rem;
+  top: -15px;
+  left: 15px;
+  padding: 0.1rem 0.5rem;
 }
 
 /*** Circle *****
 *****************/
 .circle {
-    border-radius: 100%;
-
+  border-radius: 100%;
 }
 
 /*** Border-line *****
 *********************/
 .border-line {
-    border: 2px solid rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
 }
 
 .border-line-right {
-    border-right: 2px solid rgba(0, 0, 0, 0.226);
+  border-right: 2px solid rgba(0, 0, 0, 0.226);
 }
 
 .shadow {
-    box-shadow: 2px 2px 1px 1px rgba(36, 11, 255, 0.2);
+  box-shadow: 2px 2px 1px 1px rgba(36, 11, 255, 0.2);
 }
 
 .hoverColor:hover {
-    color: orangered;
+  color: orangered;
 }
-
-
-
-

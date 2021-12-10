@@ -1,14 +1,13 @@
 .cart-menu {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .form-container {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-    margin: 1rem 0rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 1rem 0rem;
 }
-

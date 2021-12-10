@@ -15,7 +15,6 @@ const WeatherHolder = ({
   cloud,
   riskForRain,
   clock,
- 
 }) => {
   return (
     <div className="flex-section">
@@ -24,7 +23,10 @@ const WeatherHolder = ({
       <p>Medeltemperaturen ser ut att bli: {temperatur}°C</p>
       <p>Solen går upp: {sunUp}</p>
       <p>Solen går ner: {sunDown}</p>
-      <p> Temperaturen ser ut att bli: {temp}°C, Kl {clock} </p>
+      <p>
+        {" "}
+        Temperaturen ser ut att bli: {temp}°C, Kl {clock}{" "}
+      </p>
       <p> Känns som... {feelsLike}°C </p>
       <p> Molnigheten blir: {cloud}% </p>
 

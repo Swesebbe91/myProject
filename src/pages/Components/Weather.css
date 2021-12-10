@@ -1,15 +1,14 @@
 .weather-section {
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    background-color: rgb(255, 255, 255);
-    
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  background-color: rgb(255, 255, 255);
 }
 
 .header-section {
-    display: flex;
-    justify-content: center;
-    background-color: rgb(255, 255, 255);
-    margin-bottom: 0.01rem;
-    border-bottom: 5px solid rgb(31, 118, 248)
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 0.01rem;
+  border-bottom: 5px solid rgb(31, 118, 248);
 }

@@ -2,7 +2,7 @@ import React from "react";
 import Cards from "./Components/Cards";
 import "./Information.css";
 import BgText from "../pages/Components/BgText";
-import Test from "./Components/Layout/Test";
+import Test from "./Components/Layout/Video";
 
 const information = [
   {

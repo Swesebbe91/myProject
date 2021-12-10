@@ -1,9 +1,7 @@
 .button-style {
-    background-color: var(--color-primary);
-    color: white;
-    padding: 0.5rem 5rem;
-    border-radius: 2rem;
-    margin-top: 2rem;
-    
+  background-color: var(--color-primary);
+  color: white;
+  padding: 0.5rem 5rem;
+  border-radius: 2rem;
+  margin-top: 2rem;
 }
-

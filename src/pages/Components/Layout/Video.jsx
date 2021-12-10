@@ -1,6 +1,6 @@
 import React from "react";
 
-const Test = () => {
+const Video = () => {
   return (
     <div>
       <iframe
@@ -16,4 +16,4 @@ const Test = () => {
   );
 };
 
-export default Test;
+export default Video;

@@ -20,7 +20,7 @@ const Home = () => {
         'Sunset Run Malmö är ett motionslopp som går längs Sveriges vackraste strand "Ribban" 25 juli. Varmt välkommen att delta på festen!',
       buttonName: "Läs mer!",
       buttonNameBackside: "Vänd tillbaka kortet",
-      paragraphBackside: <TextInfo/>
+      paragraphBackside: <TextInfo />,
     },
     {
       id: 1,
@@ -84,7 +84,6 @@ const Home = () => {
             secondButton={item.secondButton}
             headerBackside={item.header}
             paragraphBackside={item.paragraphBackside}
-            
           />
         ))}
       </div>

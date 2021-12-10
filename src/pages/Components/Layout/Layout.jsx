@@ -10,11 +10,8 @@ const Layout = ({ children }) => {
       <main>
         <h2>{children}</h2>
       </main>
-      <div className=""> {
-        <Weather/> }
-      </div>
+      <div className=""> {<Weather />}</div>
       <Footer />
-      
     </div>
   );
 };
